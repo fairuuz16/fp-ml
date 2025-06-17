@@ -61,11 +61,29 @@ Notebook ini mengeksplorasi tiga skenario utama untuk melatih dan mengevaluasi m
 
 1.  **Perbandingan Data Tanpa Seleksi Fitur dengan Data Seleksi Fitur:**
 
-    - Skenario ini membandingkan performa model ketika dilatih pada dataset lengkap (tanpa seleksi fitur) versus dataset yang telah melalui proses seleksi fitur. Tujuannya adalah untuk menganalisis dampak seleksi fitur terhadap kinerja model, potensi pengurangan dimensi, dan peningkatan interpretasi model.
+    Skenario ini membandingkan performa model ketika dilatih pada dataset lengkap (tanpa seleksi fitur) versus dataset yang telah melalui proses seleksi fitur. Tujuannya adalah untuk menganalisis dampak seleksi fitur terhadap kinerja model, potensi pengurangan dimensi, dan peningkatan interpretasi model.
 
 2.  **Perbandingan Data Tanpa SMOTE dengan Data SMOTE:**
 
-    - Pada skenario ini, model-model dilatih dan dievaluasi pada dataset asli yang tidak seimbang, kemudian dibandingkan dengan performa model yang dilatih pada data yang telah diatasi ketidakseimbangan kelasnya menggunakan teknik **SMOTE (Synthetic Minority Over-sampling Technique)**. Tujuannya adalah untuk melihat apakah penanganan ketidakseimbangan kelas dapat meningkatkan performa model, terutama pada metrik yang sensitif terhadap kelas minoritas seperti recall dan F1-score.
+    Pada skenario ini, model-model dilatih dan dievaluasi pada dataset asli yang tidak seimbang, kemudian dibandingkan dengan performa model yang dilatih pada data yang telah diatasi ketidakseimbangan kelasnya menggunakan teknik **SMOTE (Synthetic Minority Over-sampling Technique)**. Tujuannya adalah untuk melihat apakah penanganan ketidakseimbangan kelas dapat meningkatkan performa model, terutama pada metrik yang sensitif terhadap kelas minoritas seperti recall dan F1-score.
 
 3.  **Perbandingan setelah menggunakan Hyperparameter Tuning:**
-    - Skenario ini membandingkan performa model sebelum dan sesudah dilakukan **Hyperparameter Tuning** menggunakan `GridSearchCV`. Tujuannya adalah untuk menemukan kombinasi hyperparameter optimal yang dapat meningkatkan performa model lebih lanjut dan mengukur peningkatan yang dihasilkan.
+    Skenario ini membandingkan performa model sebelum dan sesudah dilakukan **Hyperparameter Tuning** menggunakan `GridSearchCV`. Tujuannya adalah untuk menemukan kombinasi hyperparameter optimal yang dapat meningkatkan performa model lebih lanjut dan mengukur peningkatan yang dihasilkan.
+
+## 📊 Hasil Skenario Uji
+
+![Perbandingan Evaluasi Model Tanpa Menggunakan Seleksi Fitur](<assets/Perbandingan Evaluasi Model Tanpa Menggunakan Seleksi Fitur.png>)
+
+![Perbandingan Evaluasi Model Menggunakan Seleksi Fitur](<assets/Perbandingan Evaluasi Model Menggunakan Seleksi Fitur .png>)
+
+![Perbandingan Evaluasi Model Tanpa Menggunakan Seleksi Fitur dan SMOTE](<assets/Perbandingan Evaluasi Model Tanpa Menggunakan Seleksi Fitur dan SMOTE.png>)
+
+![Perbandingan Evaluasi Model Menggunakan Seleksi Fitur dan SMOTE](<assets/Perbandingan Evaluasi Model Menggunakan Seleksi Fitur dan SMOTE.png>)
+
+![Perbandingan Kinerja Model Random Forest Tanpa Menerapkan Seleksi Fitur dan Tanpa SMOTE](<assets/Perbandingan Kinerja Model Random Forest Tanpa Menerapkan Seleksi Fitur dan Tanpa SMOTE.png>)
+
+![Perbandingan Kinerja Model Gradient Boosting Tanpa Menerapkan Seleksi Fitur dan SMOTE](<assets/Perbandingan Kinerja Model Gradient Boosting Tanpa Menerapkan Seleksi Fitur dan SMOTE.png>)
+
+![Perbandingan Kinerja Model Gradient Boosting dengan Menerapkan Seleksi Fitur dan Tanpa SMOTE](<assets/Perbandingan Kinerja Model Gradient Boosting dengan Menerapkan Seleksi Fitur dan Tanpa SMOTE.png>)
+
+![Perbandingan Kinerja Model Gradient Boosting dengan Menerapkan Seleksi Fitur dan SMOTE](<assets/Perbandingan Kinerja Model Gradient Boosting dengan Menerapkan Seleksi Fitur dan SMOTE.png>)
